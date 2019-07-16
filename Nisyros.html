@@ -20,26 +20,31 @@
     <div class="container-fluid">
         <div class="row">
             <!--Navigation-->
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white flex-lg-column align-items-lg-start">
                     <a class="navbar-brand h1" href="index.html"> Vasilis Kotsinis</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mymenu" aria-controls="mymenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mymenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse text-right text-lg-left" id="mymenu">
                         <ul class="navbar-nav mr-auto flex-lg-column float-right float-lg-left">
                             <li class="nav-item dropdown">
                                 <a class="nav-link float-right float-lg-left" data-toggle="collapse" href="#dropdownMenu2" aria-expanded="false" aria-controls="dropdownMenu2">
-                                    Projects
-                                </a>
-                                <div class="collapse" id="dropdownMenu2">
-                                    <br>
-                                    <a class="dropdown-item" href="Weddings.html">Weddings</a>
-                                    <a class="dropdown-item" href="Amorgos-SmallCyclades.html">Amorgos & Small Cyclades</a>
-                                    <a class="dropdown-item" href="Kea.html">Kea</a>
-                                    <a class="dropdown-item" href="Mykonos-Delos.html">Mykonos & Delos</a>
-                                    <a class="dropdown-item" href="Nisyros.html">Nisyros</a>
-                                    <a class="dropdown-item" href="Apartments.html">Apartments</a>
+                                        Projects
+                                    </a>
+                                <div class="collapse show" id="dropdownMenu2">
+
+                                    <a class="dropdown-item font-color" href="Weddings.html">Weddings</a>
+                                    <a class="float-right float-lg-left dropdown-item font-color" data-toggle="collapse" href="#dropdownMenu3" aria-expanded="false" aria-controls="dropdownMenu3">
+                                            Islands
+                                        </a>
+                                    <div class="collapse show pl-3 pr-4" id="dropdownMenu3">
+                                        <a class="dropdown-item font-color" href="Amorgos-SmallCyclades.html">Amorgos & Cyclades</a>
+                                        <a class="dropdown-item font-color" href="Kea.html">Kea</a>
+                                        <a class="dropdown-item font-color" href="Mykonos-Delos.html">Mykonos & Delos</a>
+                                        <a class="dropdown-item font-color active-page" href="Nisyros.html">Nisyros</a>
+                                    </div>
+                                    <a class="dropdown-item font-color" href="Apartments.html">Apartments</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -47,14 +52,19 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link float-right float-lg-left" href="Contact.html">Contact <span
-                                        class="sr-only"></span></a>
+                                            class="sr-only"></span></a>
                             </li>
                         </ul>
+                    </div>
+                    <hr>
+                    <div class="icon ml-auto">
+                        <a href="#"><img src="assets/images/icon-fb.png" alt="FB"></a>
+                        <a href="#"><img src="assets/images/icon-insta.png" alt="IG"></a>
                     </div>
                 </nav>
             </div>
             <!-- Content Area-->
-            <div id="myGallery" class="page-top col-lg-10">
+            <div id="myGallery" class="page-top col-lg-9">
                 <!-- Photo Gallery (by default is shown)-->
                 <div class="container gallery-container">
                     <h1 class="text-center">Nisyros</h1>
@@ -153,7 +163,7 @@
                 </div>
             </div>
             <!-- Photo Container (by default is hidden)-->
-            <div id="myPhotoContainer" style="display:none;" class="col-lg-10">
+            <div id="myPhotoContainer" style="display:none;" class="col-lg-9">
                 <div class="closeButton" onclick="closePhoto()"></div>
                 <div id="otinanai " class="row ">
                     <div class="col-6 stilesa " onclick="getImage(-1); "></div>

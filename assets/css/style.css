@@ -6,6 +6,7 @@ body {
     margin-top: 20px;
     font-size: 16px;
     min-width: 540px;
+    min-height: 580px;
 }
 
 img {
@@ -45,12 +46,17 @@ img {
     cursor: url("../right.svg"), auto;
 }
 
+.icon img {
+    max-width: 30px;
+    display: inline;
+}
+
 .thumbnail img {
     min-width: 90%;
 }
 
 #myPhoto {
-    max-height: 100vh;
+    max-height: 90vh;
     cursor: unset;
 }
 
@@ -58,14 +64,47 @@ ul {
     display: inline;
 }
 
+hr {
+    height: 6px;
+    width: -webkit-fill-available;
+    background: url(../line.png)repeat-x 0 0;
+    border: 0;
+}
+
 .h1 {
     font-size: 220%;
     font-family: 'Philosopher', sans-serif;
 }
 
+.card {
+    width: fit-content;
+}
+
 .collapse a {
     font-size: 20px;
     font-family: 'Philosopher', sans-serif;
+}
+
+.active-page {
+    color: rgba(0, 0, 0, 0.8)!important;
+}
+
+.dropdown-item {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item:hover {
+    color: rgba(0, 0, 0, 0.7)!important;
+    background-color: unset;
+}
+
+.dropdown-item:active {
+    background-color: unset;
+}
+
+.dropdown-item:focus {
+    background-color: unset;
+    color: rgba(0, 0, 0, 0.7)!important;
 }
 
 .navbar {
