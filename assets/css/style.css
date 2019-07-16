@@ -173,3 +173,7 @@ hr {
 .collapsing {
     transition-duration: 1ms;
 }
+
+#mymail {
+    color: rgba(0, 0, 0, 0.5);
+}
