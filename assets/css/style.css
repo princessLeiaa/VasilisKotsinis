@@ -81,7 +81,7 @@ hr {
 }
 
 .collapse a {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Philosopher', sans-serif;
 }
 
@@ -114,6 +114,11 @@ hr {
 .navbar-brand {
     font-size: 50px;
 }
+
+
+/* .navbar-nav {
+    width: 23vw;
+} */
 
 .gallery-container h1 {
     font-family: 'Philosopher', sans-serif;
